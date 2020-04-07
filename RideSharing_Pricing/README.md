@@ -1,4 +1,4 @@
-# DeepPool/fs:https://github.com/misteroda/fleet-sim
+# These are the steps to generate the data files that serve as our dataset. These are already generated and provided in:
 
 ## Setup
 Below you will find step-by-step instructions to set up the NYC taxi simulation using 2016-05 trips for training and 2016-06 trips for evaluation.
@@ -58,18 +58,4 @@ docker-compose run sim python src/preprocessing/create_tt_map.py ./data
 The tt_map needs to be recreated when you change simulation settings such as MAX_MOVE.
 
 ### 10. Change simulation settings
-You can find simulation setting files in `src/config/settings` and `src/dqn/settings`.
-
-## Start
-### 1. Run Simulation using OSRM
-This mode
-```commandline
-docker-compose up
-```
-`sim` container is created and runs `bin/run.sh`. 
-
-### 2. Run Simulation using precomputed OSRM routing data
-This mode uses precomputed ETA and trajectories by OSRM, which is much faster than above.
-```commandline
-docker-compose run --no-deps sim python src/run.py --train --tag test
-``` 
+You can find simulation setting files in `src/config/settings` and `src/simulator/settings`.
