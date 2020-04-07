@@ -1,4 +1,6 @@
-# These are the steps to generate the data files that serve as our dataset. These are already generated and provided in:
+# These are the steps to generate the data files that serve as our dataset. These are already generated and provided @:
+
+https://purr.purdue.edu/projects/ridesharing/files
 
 ## Setup
 Below you will find step-by-step instructions to set up the NYC taxi simulation using 2016-05 trips for training and 2016-06 trips for evaluation.
