@@ -62,3 +62,19 @@ The tt_map needs to be recreated when you change simulation settings such as MAX
 
 ### 10. Change simulation settings
 You can find simulation setting files in `src/config/settings` and `src/simulator/settings`.
+
+
+
+
+© CLAN Labs, Purdue.
+
+Please cite the following paper if using any part of the code:
+
+Abubakr Al-Abbasi, Arnob Ghosh, and Vaneet Aggarwal, "DeepPool: Distributed Model-free Algorithm for Ride-sharing using Deep Reinforcement Learning," IEEE Transactions on Intelligent Transportation Systems, vol. 20, no. 2, pp. 4714-4727, Dec 2019. @article{al2019deeppool, title={Deeppool: Distributed model-free algorithm for ride-sharing using deep reinforcement learning}, author={Al-Abbasi, Abubakr O and Ghosh, Arnob and Aggarwal, Vaneet}, journal={IEEE Transactions on Intelligent Transportation Systems}, volume={20}, number={12}, pages={4714--4727}, year={2019}, publisher={IEEE} }
+
+
+Since this code uses codes developed in the papers below, please cite those too.
+
+A. Singh, A. Alabbasi, and V. Aggarwal, "A distributed model-free algorithm for multi-hop ride-sharing using deep reinforcement learning," arXiv preprint arXiv:1910.14002, Oct 2019 (also in NeurIPS Workshop 2019). @inproceedings{singh2019reinforcement, title={A reinforcement learning based algorithm for multi-hop ride-sharing: Model-free approach}, author={Singh, Ashutosh and Al-Abbasi, AO and Aggarwal, Vaneet}, booktitle={Neural Information Processing Systems (Neurips) Workshop}, year={2019} } @article{singh2019distributed, title={A Distributed Model-Free Algorithm for Multi-hop Ride-sharing using Deep Reinforcement Learning}, author={Singh, Ashutosh and Alabbasi, Abubakr and Aggarwal, Vaneet}, journal={arXiv preprint arXiv:1910.14002}, year={2019} }
+
+T. Oda and C. Joe-Wong, "Movi: A model-free approach to dynamic fleet management," IEEE INFOCOM 2018. (Their code is available at https://github.com/misteroda/FleetAI ) @inproceedings{oda2018movi, title={MOVI: A model-free approach to dynamic fleet management}, author={Oda, Takuma and Joe-Wong, Carlee}, booktitle={IEEE INFOCOM 2018-IEEE Conference on Computer Communications}, pages={2708--2716}, year={2018}, organization={IEEE} }
