@@ -49,12 +49,13 @@ print(df.head())
 
 
 # #### Generating plots of summary logs
-summary_plots = l.plot_summary([log_dir_path], ["experiment_1"], plt)
+summary_plots = l.plot_summary([log_dir_path], ["Accept_Reject Rate", "Occupancy Rate"], plt)
+summary_plots.savefig("Summary.png", bbox_inches = 'tight')
 summary_plots.show()
 
 # #### Generating plots of relevant experiment metrics
-plt, df = l.plot_metrics([log_dir_path], ["experiment_1"], plt)
-plt.savefig("Metrics")
+plt, df = l.plot_metrics([log_dir_path], ["Revenue", "Working Time", "Cruising Time", "Waiting_Time"], plt)
+plt.savefig("Metrics.png", bbox_inches = 'tight')
 plt.show()
 
 # #### We may also look at the metrics as a pandas dataframe
