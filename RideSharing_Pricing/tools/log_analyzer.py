@@ -211,7 +211,8 @@ class LogAnalyzer(object):
             plt.plot(summary.t, summary.n_accepted_commands, label="Accepted", alpha=0.7)
 
             plt.ylabel("count/minute")
-            plt.xlabel("simulation time (mm-dd hh)")
+            plt.title(labels[0])
+            plt.xlabel("simulation time (yy-mm-dd hr:min:sec)")
             plt.xticks(rotation=25)
             plt.ylim([0, 610])
             ax = plt.gca()
@@ -224,10 +225,10 @@ class LogAnalyzer(object):
             if i == 0:
                 plt.legend(loc="upper right")
 
-            plt.savefig("Accepts_Rejects.png")
+            # plt.savefig("Accepts_Rejects.png")
 
             plt.subplot(len(paths), 2, i * 2 + 2)
-            plt.title(labels[i])
+            plt.title(labels[1])
             plt.plot(summary.t, summary.n_vehicles_OnDuty, label="OnDuty")
             plt.plot(
                 summary.t, summary.n_vehicles_Occupied, label="Occupied", linestyle=":"
@@ -249,9 +250,8 @@ class LogAnalyzer(object):
             # plt.plot(summary.t, summary.average_wt, alpha=1.0)
             # plt.ylim([0, 450])
             # plt.ylabel("waiting time (s)")
-            plt.xlabel("simulation time (yy-mm-dd hr:min:sec)")
             plt.xticks(rotation=25)
-            plt.savefig("Occupied_OnDuty.png")
+            # plt.savefig("Occupied_OnDuty.png")
         return plt
 
     def plot_metrics_ts(self, paths, labels, plt):
@@ -298,21 +298,24 @@ class LogAnalyzer(object):
             plt.subplot(141)
             plt.xlabel("revenue ($/h)")
             plt.hist(
-                score.revenue_per_hour, bins=100, range=(18, 42), alpha=0.5, label=label
+                score.revenue_per_hour, bins=100, range=(18, 42), alpha=0.5, label=labels[0]
             )
             plt.yticks([])
+            plt.title(labels[0])
 
             plt.subplot(142)
             plt.xlabel("working time (h/day)")
-            plt.hist(score.working_hour, bins=100, range=(17, 23), alpha=0.5, label=label)
+            plt.hist(score.working_hour, bins=100, range=(17, 23), alpha=0.5, label=labels[1])
             plt.yticks([])
+            plt.title(labels[1])
 
             plt.subplot(143)
             plt.xlabel("cruising time (h/day)")
             plt.hist(
-                score.cruising_hour, bins=100, range=(1.9, 7.1), alpha=0.5, label=label
+                score.cruising_hour, bins=100, range=(1.9, 7.1), alpha=0.5, label=labels[2]
             )
             plt.yticks([])
+            plt.title(labels[2])
 
             # plt.subplot(234)
             # plt.xlabel("occupancy rate")
@@ -331,9 +334,10 @@ class LogAnalyzer(object):
                 bins=500,
                 range=(0, 650),
                 alpha=0.5,
-                label=label,
+                label=labels[3],
             )
             plt.yticks([])
+            plt.title(labels[3])
 
             x = {}
             x["00_reject_rate"] = float(len(c[c.status == 4])) / len(c) * 100
