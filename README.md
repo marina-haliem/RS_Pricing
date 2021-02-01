@@ -1,4 +1,4 @@
-# A Distributed Model-Free Ride-Sharing Algorithm with Pricing using Deep Reinforcement Learning
+# A Distributed Model-Free Ride-Sharing Algorithm with Pricing using Deep Reinforcement Learning - CSCS 2020
 @inproceedings{10.1145/3385958.3430484, author = {Haliem, Marina and Mani, Ganapathy and Aggarwal, Vaneet and Bhargava, Bharat}, title = {A Distributed Model-Free Ride-Sharing Algorithm with Pricing Using Deep Reinforcement Learning}, year = {2020}, isbn = {9781450376211}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3385958.3430484}, booktitle = {Computer Science in Cars Symposium}, articleno = {5}, numpages = {10} }
 
 ## These are the steps to generate the data files that serve as our dataset. These are already generated and provided @:
