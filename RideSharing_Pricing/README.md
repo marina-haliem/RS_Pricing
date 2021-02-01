@@ -1,4 +1,7 @@
-# These are the steps to generate the data files that serve as our dataset. These are already generated and provided @:
+# A Distributed Model-Free Ride-Sharing Algorithm with Pricing using Deep Reinforcement Learning
+@inproceedings{10.1145/3385958.3430484, author = {Haliem, Marina and Mani, Ganapathy and Aggarwal, Vaneet and Bhargava, Bharat}, title = {A Distributed Model-Free Ride-Sharing Algorithm with Pricing Using Deep Reinforcement Learning}, year = {2020}, isbn = {9781450376211}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3385958.3430484}, booktitle = {Computer Science in Cars Symposium}, articleno = {5}, numpages = {10} }
+
+## These are the steps to generate the data files that serve as our dataset. These are already generated and provided @:
 
 https://purr.purdue.edu/projects/ridesharing/files
 
@@ -66,14 +69,19 @@ You can find simulation setting files in `src/config/settings` and `src/simulato
 
 
 
-© CLAN Labs, Purdue.
+## © CLAN Labs, Purdue.
 
-Please cite the following paper if using any part of the code:
+# Please cite the following papers if using any part of the code:
+
+Marina Haliem, Ganapathy Mani, Vaneet Aggarwal, Bharat Bhargava, "A Distributed Model-Free Ride-Sharing Algorithm with Pricing using Deep Reinforcement Learning", Computer Science in Cars Symposium, CSCS 2020. @inproceedings{10.1145/3385958.3430484, author = {Haliem, Marina and Mani, Ganapathy and Aggarwal, Vaneet and Bhargava, Bharat}, title = {A Distributed Model-Free Ride-Sharing Algorithm with Pricing Using Deep Reinforcement Learning}, year = {2020}, isbn = {9781450376211}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3385958.3430484}, booktitle = {Computer Science in Cars Symposium}, articleno = {5}, numpages = {10} }
+
+Marina Haliem, Ganapathy Mani, Vaneet Aggarwal, Bharat Bhargava, "A Distributed Model-Free Ride-Sharing Approach for Joint Matching, Pricing, and Dispatching using Deep Reinforcement Learning", Arxiv Pre-Print. @article{haliem2020distributed, title={A distributed model-free ride-sharing approach for joint matching, pricing, and dispatching using deep reinforcement learning}, author={Haliem, Marina and Mani, Ganapathy and Aggarwal, Vaneet and Bhargava, Bharat}, journal={arXiv preprint arXiv:2010.01755}, year={2020} }
+
+
+
+# Since this code uses codes developed in the papers below, please cite those too.
 
 Abubakr Al-Abbasi, Arnob Ghosh, and Vaneet Aggarwal, "DeepPool: Distributed Model-free Algorithm for Ride-sharing using Deep Reinforcement Learning," IEEE Transactions on Intelligent Transportation Systems, vol. 20, no. 2, pp. 4714-4727, Dec 2019. @article{al2019deeppool, title={Deeppool: Distributed model-free algorithm for ride-sharing using deep reinforcement learning}, author={Al-Abbasi, Abubakr O and Ghosh, Arnob and Aggarwal, Vaneet}, journal={IEEE Transactions on Intelligent Transportation Systems}, volume={20}, number={12}, pages={4714--4727}, year={2019}, publisher={IEEE} }
-
-
-Since this code uses codes developed in the papers below, please cite those too.
 
 A. Singh, A. Alabbasi, and V. Aggarwal, "A distributed model-free algorithm for multi-hop ride-sharing using deep reinforcement learning," arXiv preprint arXiv:1910.14002, Oct 2019 (also in NeurIPS Workshop 2019). @inproceedings{singh2019reinforcement, title={A reinforcement learning based algorithm for multi-hop ride-sharing: Model-free approach}, author={Singh, Ashutosh and Al-Abbasi, AO and Aggarwal, Vaneet}, booktitle={Neural Information Processing Systems (Neurips) Workshop}, year={2019} } @article{singh2019distributed, title={A Distributed Model-Free Algorithm for Multi-hop Ride-sharing using Deep Reinforcement Learning}, author={Singh, Ashutosh and Alabbasi, Abubakr and Aggarwal, Vaneet}, journal={arXiv preprint arXiv:1910.14002}, year={2019} }
 
